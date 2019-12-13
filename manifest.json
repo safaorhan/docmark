@@ -1,0 +1,26 @@
+{
+    "name": "Docmark",
+    "version": "0.1",
+    "description": "Share bookmarks among teammates. It is great for organizing documentation, sharing bunch of links and maintaining them.",
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "bookmarks",
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://infohub.corp.wayfair.com/*"
+            ],
+            "js": [
+                "ui.js"
+            ]
+        }
+    ],
+    "manifest_version": 2
+}
