@@ -1,6 +1,6 @@
 {
     "name": "Docmark",
-    "version": "0.1",
+    "version": "0.2",
     "description": "Share bookmarks among teammates. It is great for organizing documentation, sharing bunch of links and maintaining them.",
     "background": {
         "scripts": [
@@ -8,9 +8,13 @@
         ],
         "persistent": false
     },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
     "permissions": [
-        "bookmarks",
-        "activeTab"
+        "bookmarks"
     ],
     "content_scripts": [
         {
